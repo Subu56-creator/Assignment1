@@ -1,0 +1,317 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Saman Jasem</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="styles.css" />
+<script src="script.js" defer></script>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+		<div id="wrapper">
+
+			<!-- Header -->
+			<header id="header" class="alt">
+				<h1 class="gothic-font">Saman Jasem</h1>
+				<p class="subtitle">This site is all about me ;)</p>
+			</header>
+
+			<!-- Nav -->
+			<nav id="nav">
+				<ul>
+					<li><a href="#my-story" class="active">Introduction</a></li>
+					<li><a href="#minigames">Minigames</a></li>
+                    <li><a href="#calendar">My Calendar</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+				</ul>
+			</nav>
+
+			<!-- Main -->
+			<div id="main">
+
+				<!-- About Me -->
+				<!-- Introduction Section -->
+<!-- My Story Section -->
+<section id="my-story" class="main">
+    <div class="profile-container">
+        <!-- Left Side (Kurdish Flag Background) -->
+        <div class="profile-left">
+            <h2>Saman Jasem</h2>
+            <p>@feelsdankman613</p>
+            
+            <h3>Interests</h3>
+            <ul>
+                <li>Computers</li>
+                <li>Anime</li>
+                <li>Games</li>
+                <li>Philosophy</li>
+            </ul>
+        </div>
+
+        <!-- Right Side (My Story) -->
+        <div class="profile-right">
+            <h2>My Story</h2>
+            <p>
+                My name is Saman, and I am a Kurdish guy from Iraq. I was born on February 12, 2002, in the Kurdistan region of Iraq. From a young age, I learned what it meant to be Kurdish and the struggles my people have faced throughout history.
+            </p>
+            <p>
+                I started my education at the Classical School of the Medes and graduated in the summer of 2020. At that time, I was unsure about my future. Coming from a family with four doctors, I decided not to pursue medicine because I am naturally anxious and easily stressed—qualities that I felt were not suitable for a doctor.
+            </p>
+            <p>
+                Choosing a major was difficult for me, as I never found anything particularly enjoyable. Eventually, I chose computer science, mainly because it allowed me to avoid social interactions as much as possible due to my social anxiety. However, studying in Iraq was not an option for me due to economic and political reasons. I needed a country that matched my financial situation, so I chose Hungary.
+            </p>
+            <p>
+                I moved to Hungary on August 21, 2021, and started my foundation year—a new beginning in a completely different environment. Adapting to the country took time, as I met people with very different cultures, personalities, and senses of humor. Some of those people have stayed with me throughout my journey, and I appreciate their presence in my life. Other than my university coursemates, who have been with me for quite some time, I have only one Hungarian friend after four years in the country, but he is a great person and someone I truly appreciate.
+            </p>
+            <p>
+                In 2022, I began studying Computer Engineering. My first two semesters were very difficult—I did not like the university system at all, and I even failed one of the most important subjects in my first year. Now, I am in my sixth semester and will need to add an extra semester. My experience as a third-year student has not been great, and I have come to believe that university is more of a "ticket" for companies to trust that you have knowledge rather than a place of real learning. I will graduate next year, but I feel uncomfortable calling myself a computer engineer. Maybe this is the reality everywhere, but for now, I do not see myself applying for jobs anytime soon.
+            </p>
+            <p>
+                I am now 23 years old, and I still struggle to find something I truly enjoy. People have suggested different activities—sports, music, socializing, even partying—but none of them really help. I do like going out with my friends from time to time, but I am still searching for something that makes me feel mentally comfortable.
+            </p>
+            <p>
+                Right now, besides studying, I spend my time gaming and watching anime. Let’s see what happens after graduation.
+            </p>
+        </div>
+    </div>
+</section>
+
+
+
+
+				<!-- Minigames -->
+				<section id="minigames" class="main special">
+                    <header class="major">
+                        <h2>Minigames</h2>
+                    </header>
+
+                    <!-- Rock, Paper, Scissors -->
+                    <p>Click below to play Rock, Paper, Scissors.</p>
+                    <button onclick="showRPSGame()" class="button">Play Rock, Paper, Scissors</button>
+
+                    <div id="rps-game" style="display: none;">
+                        <h3>Rock, Paper, Scissors</h3>
+                        <p>Choose one:</p>
+                        <button onclick="playRPS('rock')">Rock</button>
+                        <button onclick="playRPS('paper')">Paper</button>
+                        <button onclick="playRPS('scissors')">Scissors</button>
+                        <p id="rps-result"></p>
+                    </div>
+
+                    <!-- Moral Philosophy Quiz -->
+                    <h3>Moral Philosophy Quiz: Who Do You Think Like?</h3>
+                    <button onclick="showQuiz()" class="button">Start Quiz</button>
+
+                    <div id="moral-quiz" style="display: none;">
+                        <h3 id="quiz-title">MORAL PHILOSOPHY QUIZ</h3>
+                        <p id="quiz-question">Answer the following questions and discover which philosopher matches your thinking!</p>
+                    
+                        <!-- QUESTION 1 -->
+                        <h3>QUESTION 1</h3>
+                        <p>What is the basis of moral duty?</p>
+                        <div class="quiz-option" onclick="selectAnswer('q1', 'kant')">A. Universal moral laws (Kant)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q1', 'aristotle')">B. Good character and moderation (Aristotle)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q1', 'nietzsche')">C. Morality is subjective (Nietzsche)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q1', 'hume')">D. Experience and emotions (Hume)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q1', 'descartes')">E. Rational thought (Descartes)</div>
+                    
+                        <!-- QUESTION 2 -->
+                        <h3>QUESTION 2</h3>
+                        <p>A man steals medicine to save his wife. Is it moral?</p>
+                        <div class="quiz-option" onclick="selectAnswer('q2', 'kant')">A. No, stealing is always wrong (Kant)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q2', 'aristotle')">B. Yes, virtue sometimes breaks rules (Aristotle)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q2', 'nietzsche')">C. Yes, morality is an illusion (Nietzsche)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q2', 'hume')">D. Yes, emotions guide morality (Hume)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q2', 'descartes')">E. No, reason must find another way (Descartes)</div>
+                    
+                        <!-- QUESTION 3 -->
+                        <h3>QUESTION 3</h3>
+                        <p>What is the source of moral knowledge?</p>
+                        <div class="quiz-option" onclick="selectAnswer('q3', 'kant')">A. Reason alone determines morality (Kant)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q3', 'aristotle')">B. Learned through practice & observation (Aristotle)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q3', 'nietzsche')">C. Morality is a tool of social control (Nietzsche)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q3', 'hume')">D. Morality comes from emotions (Hume)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q3', 'descartes')">E. Moral truth is based on rational thought (Descartes)</div>
+                    
+                        <!-- QUESTION 4 -->
+                        <h3>QUESTION 4</h3>
+                        <p>What is the ultimate goal of life?</p>
+                        <div class="quiz-option" onclick="selectAnswer('q4', 'kant')">A. To act according to moral duty (Kant)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q4', 'aristotle')">B. To live virtuously & achieve eudaimonia (Aristotle)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q4', 'nietzsche')">C. To create personal meaning (Nietzsche)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q4', 'hume')">D. To pursue pleasure and minimize suffering (Hume)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q4', 'descartes')">E. To attain perfect knowledge through reason (Descartes)</div>
+                    
+                        <!-- QUESTION 5 -->
+                        <h3>QUESTION 5</h3>
+                        <p>How should we approach the question of free will?</p>
+                        <div class="quiz-option" onclick="selectAnswer('q5', 'kant')">A. Morality requires us to assume free will (Kant)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q5', 'aristotle')">B. Virtue assumes we have free will (Aristotle)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q5', 'nietzsche')">C. Free will is an illusion; instincts drive us (Nietzsche)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q5', 'hume')">D. Choices come from habits and emotions (Hume)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q5', 'descartes')">E. Free will exists because reason allows us to doubt (Descartes)</div>
+                    
+                        <!-- QUESTION 6 -->
+                        <h3>QUESTION 6</h3>
+                        <p>What is the role of happiness in morality?</p>
+                        <div class="quiz-option" onclick="selectAnswer('q6', 'kant')">A. Happiness is irrelevant; duty is more important (Kant)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q6', 'aristotle')">B. A moral life should aim at happiness & flourishing (Aristotle)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q6', 'nietzsche')">C. Happiness is weak; strive for greatness instead (Nietzsche)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q6', 'hume')">D. Morality should bring happiness because emotions guide it (Hume)</div>
+                        <div class="quiz-option" onclick="selectAnswer('q6', 'descartes')">E. Happiness comes from intellectual clarity (Descartes)</div>
+                    
+                        <button class="quiz-submit" onclick="calculatePhilosopher()">Submit</button>
+                        <p id="quiz-result"></p>
+                    </div>
+
+                    <h3>Anime Protagonist Quiz: Who Are You?</h3>
+<button onclick="showAnimeQuiz()" class="button">Start Quiz</button>
+
+<div id="anime-quiz" style="display: none;">
+    <h3 id="quiz-title-anime">ANIME PROTAGONIST QUIZ</h3>
+    <p id="quiz-question-anime">Answer the following questions to find out which anime protagonist matches your personality!</p>
+
+    <!-- QUESTION 1 -->
+    <h3>QUESTION 1</h3>
+    <p>What drives you the most in life?</p>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q1', 'luffy')">A. Adventure and dreams! (Luffy)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q1', 'goku')">B. Becoming the strongest! (Goku)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q1', 'naruto')">C. Protecting my friends! (Naruto)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q1', 'ryo')">D. Living life my way! (Saeba Ryo)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q1', 'eren')">E. Destroying my enemies! (Eren Yeager)</div>
+
+    <!-- QUESTION 2 -->
+    <h3>QUESTION 2</h3>
+    <p>How do you handle conflict?</p>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q2', 'luffy')">A. Laugh it off unless it's serious. (Luffy)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q2', 'goku')">B. Fight my way through. (Goku)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q2', 'naruto')">C. Try talking first. (Naruto)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q2', 'ryo')">D. Use wit and charm. (Saeba Ryo)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q2', 'eren')">E. Embrace conflict. (Eren Yeager)</div>
+
+    <!-- QUESTION 3 -->
+    <h3>QUESTION 3</h3>
+    <p>What is your leadership style?</p>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q3', 'luffy')">A. Inspire with passion and loyalty. (Luffy)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q3', 'goku')">B. Lead by example with strength. (Goku)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q3', 'naruto')">C. Bring people together with trust. (Naruto)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q3', 'ryo')">D. Mostly solo, but can lead. (Saeba Ryo)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q3', 'eren')">E. Lead with vision, no matter the cost. (Eren Yeager)</div>
+
+    <!-- QUESTION 4 -->
+    <h3>QUESTION 4</h3>
+    <p>What’s your biggest strength?</p>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q4', 'luffy')">A. Loyalty and willpower. (Luffy)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q4', 'goku')">B. Endless determination. (Goku)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q4', 'naruto')">C. Connecting with people. (Naruto)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q4', 'ryo')">D. Intelligence and charm. (Saeba Ryo)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q4', 'eren')">E. Intensity and sacrifice. (Eren Yeager)</div>
+
+    <!-- QUESTION 5 -->
+    <h3>QUESTION 5</h3>
+    <p>What would you do in a life-or-death situation?</p>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q5', 'luffy')">A. Stay confident and find a way. (Luffy)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q5', 'goku')">B. Fight to the end. (Goku)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q5', 'naruto')">C. Work with friends to survive. (Naruto)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q5', 'ryo')">D. Use quick thinking to escape. (Saeba Ryo)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q5', 'eren')">E. Do whatever it takes to win. (Eren Yeager)</div>
+
+    <!-- QUESTION 6 -->
+    <h3>QUESTION 6</h3>
+    <p>How do you deal with failure?</p>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q6', 'luffy')">A. Shake it off and move forward. (Luffy)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q6', 'goku')">B. Train harder and come back. (Goku)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q6', 'naruto')">C. Use it as motivation. (Naruto)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q6', 'ryo')">D. Laugh and learn from it. (Saeba Ryo)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q6', 'eren')">E. Let it fuel my rage. (Eren Yeager)</div>
+
+    <!-- QUESTION 7 -->
+    <h3>QUESTION 7</h3>
+    <p>How do you approach friendships?</p>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q7', 'luffy')">A. Protect my crew at all costs. (Luffy)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q7', 'goku')">B. Make friends but remain independent. (Goku)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q7', 'naruto')">C. My friends are my family. (Naruto)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q7', 'ryo')">D. Few close friends, mostly solo. (Saeba Ryo)</div>
+    <div class="quiz-option anime" onclick="selectAnimeAnswer('q7', 'eren')">E. Friendship is rare; trust is hard. (Eren Yeager)</div>
+
+    <button class="quiz-submit anime" onclick="calculateAnimeProtagonist()">Submit</button>
+    <p id="anime-quiz-result"></p>
+</div>
+</section>
+
+<!-- My Calendar Section -->
+<section id="calendar" class="main special">
+    <header class="major">
+        <h2>My Calendar</h2>
+    </header>
+
+    <div class="calendar-container">
+        <div class="calendar-header">
+            <span id="prev-month" class="calendar-nav">&lt;</span>
+            <h3 id="calendar-month-year"></h3>
+            <span id="next-month" class="calendar-nav">&gt;</span>
+        </div>
+
+        <div class="calendar-weekdays">
+            <span>Sun</span> <span>Mon</span> <span>Tue</span> <span>Wed</span> 
+            <span>Thu</span> <span>Fri</span> <span>Sat</span>
+        </div>
+
+        <div class="calendar-days" id="calendar-days"></div>
+    </div>
+
+<!-- Note Section Below Calendar -->
+<div class="note-container">
+    <h3>Notes for <span id="selected-date">Select a Day</span></h3>
+    <textarea id="note-input" placeholder="Write something..."></textarea>
+    <button onclick="saveNote()">Save Note</button>
+    <ul id="notes-list"></ul>
+</div>
+
+<!-- Contact Me Section -->
+<section id="contact-me" class="contact-section">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out or follow me on these platforms:</p>
+    <ul class="social-links">
+        <li>
+            <a href="https://www.instagram.com/feelsdankman613" target="_blank">@feelsdankman613</a>
+            <p>Using Instagram for memes and daily life.</p>
+        </li>
+        <li>
+            <a href="https://discord.com/users/Subu56" target="_blank">Subu56</a>
+            <p>Usually use Discord for gaming.</p>
+        </li>
+        <li>
+            <a href="https://tellonym.me/subu56" target="_blank">tellonym.me/subu56</a>
+            <p>Suggest me a game/show/anime or recommend features to add to this site anonymously.</p>
+        </li>
+    </ul>
+</section>
+
+
+
+
+</section>
+
+
+
+
+
+			</div>
+
+			<!-- Footer -->
+			<footer id="footer">
+				<p class="copyright">&copy; 2025 Saman Jasem. All rights reserved.</p>
+			</footer>
+
+		</div>
+
+		<!-- Scripts -->
+		<link rel="stylesheet" href="styles.css" />
+<script src="script.js" defer></script>
+
+	</body>
+</html>
